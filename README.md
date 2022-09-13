@@ -1,4 +1,4 @@
-# Getting Started with Create React User Search App
+# Getting Started with React User Search App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
