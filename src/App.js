@@ -1,25 +1,24 @@
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import Search from './components/Search/Search';
+import Data from "./assets/userMockData.json"
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+  constructor() {
+    super();
+
+    this.state = {
+        data: Data
+    }
+}
+
+  render() {
+    return (
+      <div className="search-app">
+        <Search data={this.state.data}></Search>
+      </div>
+    );
+  }
 }
 
 export default App;
